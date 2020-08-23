@@ -134,6 +134,8 @@ $(document).ready(function () {
     },
     submitHandler: submitHandler,
   });
+
+  initTabs("#js-tabs");
 });
 
 function toggleModal(config) {
@@ -258,5 +260,13 @@ function scrollToElement(config) {
       config.duration
     );
     return false;
+  });
+}
+
+function initTabs(container) {
+  $(container).easytabs({
+    animationSpeed: 250,
+    tabActiveClass: "way__nav-title--active",
+    updateHash: false,
   });
 }

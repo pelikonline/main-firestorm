@@ -54,7 +54,7 @@
     color: #FFFFFF;
 }
 
-.way__nav-title--active {
+a.way__nav-title--active {
     position: relative;
     font-weight: 900;
     font-size: 20px;
@@ -63,7 +63,7 @@
     color: #FF0064;
 }
 
-.way__nav-title--active::before {
+a.way__nav-title--active::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -76,18 +76,6 @@
 .way__item {
     margin: 0;
     padding: 0 0 0 32px;
-}
-
-.way__item-mtt {
-    display: block;
-}
-
-.way__item-spin {
-    display: none;
-}
-
-.way__item-cash {
-    display: none;
 }
 
 .way__item-head {
@@ -168,14 +156,14 @@
         line-height: 40px;
     }
 
-    .way__nav-title--active {
+    a.way__nav-title--active {
         font-weight: 900;
         font-size: 20px;
         line-height: 40px;
         color: #FF3232;
     }
 
-    .way__nav-title--active::before {
+    a.way__nav-title--active::before {
         display: none;
     }
 
@@ -256,7 +244,7 @@
         line-height: 50px;
     }
 
-    .way__nav-title--active {
+    a.way__nav-title--active {
         position: relative;
         font-size: 28px;
         line-height: 50px;
