@@ -1,0 +1,110 @@
+.gallery {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.gallery__inner {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery__img {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.gallery__img:focus {
+    outline: none;
+}
+
+.gallery__button-left, .gallery__button-right {
+    position: absolute;
+    top: calc(50% - 15px);
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.gallery__button-left {
+    left: 24px;
+    background: url("../img/left-mob.svg") no-repeat;
+}
+
+.gallery__button-left:hover, .gallery__button-left:focus, .gallery__button-left:active {
+    background: url("../img/left-mob-hover.svg") no-repeat;
+}
+
+.gallery__button-right {
+    right: 24px;
+    background: url("../img/right-mob.svg") no-repeat;
+}
+
+.gallery__button-right:hover {
+    background: url("../img/right-mob-hover.svg") no-repeat;
+}
+
+.gallery__button-right:focus, .gallery__button-right:active {
+    background: url("../img/right-mob-active.svg") no-repeat;
+}
+
+@media (min-width: 768px) {
+    .gallery__img {
+        width: 640px;
+    }
+
+    .gallery__button-left, .gallery__button-right {
+        top: calc(50% - 30px);
+        width: 55px;
+        height: 60px;
+    }
+
+    .gallery__button-left {
+        left: 48px;
+        background: url("../img/left.svg") no-repeat;
+    }
+
+    .gallery__button-left:hover, .gallery__button-left:focus, .gallery__button-left:active {
+        background: url("../img/left-hover.svg") no-repeat;
+    }
+
+    .gallery__button-right {
+        right: 48px;
+        background: url("../img/right.svg") no-repeat;
+    }
+
+    .gallery__button-right:hover {
+        background: url("../img/right-hover.svg") no-repeat;
+    }
+
+    .gallery__button-right:focus, .gallery__button-right:active {
+        background: url("../img/right-active.svg") no-repeat;
+    }
+}
+
+@media (min-width: 1280px) {
+    .gallery__img {
+        width: 728px;
+    }
+
+    .gallery__button-left, .gallery__button-right {
+        width: 60px;
+        height: 65px;
+    }
+
+    .gallery__button-left {
+        left: 120px;
+    }
+
+    .gallery__button-right {
+        right: 120px;
+    }
+}

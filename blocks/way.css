@@ -1,0 +1,268 @@
+.way {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    background-color: #080808;
+}
+
+.way__wrap {
+    width: 320px;
+    margin: 0 auto;
+    padding: 60px 0 100px 0;
+}
+
+.way__title {
+    margin: 0 0 40px 0;
+    padding: 0 0 0 32px;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.way__description {
+    margin: 0 0 60px 0;
+    padding: 0 0 0 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 32px;
+    color: #909090;
+}
+
+.way__description span {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+.way__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 40px 0;
+    padding: 0 32px 0 32px;
+}
+
+.way__nav-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.way__nav-title--active {
+    position: relative;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FF0064;
+}
+
+.way__nav-title--active::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 26px;
+    background: #FF0064;
+}
+
+.way__item {
+    margin: 0;
+    padding: 0 0 0 32px;
+}
+
+.way__item-mtt {
+    display: block;
+}
+
+.way__item-spin {
+    display: none;
+}
+
+.way__item-cash {
+    display: none;
+}
+
+.way__item-head {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.way__item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    text-transform: lowercase;
+    color: #FFFFFF;
+}
+
+.way__item-link {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+    .way__wrap {
+        width: 708px;
+        padding: 0 0 180px 0;
+    }
+
+    .way__title {
+        margin: 0 0 60px 0;
+        padding: 0 0 0 32px;
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .way__description {
+        margin: 0 0 60px 0;
+        padding: 0 0 0 32px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .way__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .way__nav {
+        position: relative;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 168px;
+        margin: 0 0 40px 0;
+        padding: 0 32px 0 32px;
+    }
+
+    .way__nav::before {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 168px;
+        left: 150px;
+        top: 10px;
+        background: #FF3232;
+    }
+
+    .way__nav-title {
+        margin: 0 0 15px 0;
+        padding: 0;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .way__nav-title--active {
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 40px;
+        color: #FF3232;
+    }
+
+    .way__nav-title--active::before {
+        display: none;
+    }
+
+    .way__item-head {
+        margin: 0 0 10px 0;
+        padding: 0;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .way__item-text {
+        margin: 0 0 10px 0;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .way__item-link {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: #909090;
+    }
+}
+
+@media (min-width: 1024px) {
+    .way__wrap {
+        width: 860px;
+        margin: -1px auto;
+        padding: 0 0 180px 0;
+    }
+
+    .way__title {
+        padding: 0;
+    }
+
+    .way__description {
+        margin: 0 0 90px 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .way__wrap {
+        width: 1200px;
+    }
+
+    .way__title {
+        margin: 0 0 80px 0;
+    }
+
+    .way__nav {
+        height: 168px;
+        margin: 0 0 40px 0;
+        padding: 0 390px 0 32px;
+    }
+
+    .way__nav::before {
+        height: 172px;
+        left: 506px;
+    }
+
+    .way__nav::after {
+        position: absolute;
+        content: "";
+        width: 12px;
+        height: 20px;
+        background-image: url("../img/to-right.svg");
+        background-repeat: no-repeat;
+        left: 130px;
+        top: 16px;
+        z-index: 10;
+    }
+
+    .way__nav-title {
+        margin: 0 0 20px 0;
+        font-size: 28px;
+        line-height: 50px;
+    }
+
+    .way__nav-title--active {
+        position: relative;
+        font-size: 28px;
+        line-height: 50px;
+    }
+
+    .way__item-head {
+        margin: 0 0 15px 0;
+    }
+}

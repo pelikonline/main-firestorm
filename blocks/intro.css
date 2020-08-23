@@ -1,0 +1,222 @@
+.intro {
+    margin: -70px 0 -17px 0;
+    padding: 0;
+    background-color: #080808;
+}
+
+.intro__wrap {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.intro__wrap-top {
+    margin: 0;
+    padding: 0 0 16px 0;
+}
+
+.intro__title {
+    margin: 0;
+    padding: 52px 0 0 32px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 40px;
+    white-space: pre-line;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.intro__title span {
+    font-weight: 400;
+}
+
+.intro__description {
+    width: 260px;
+    padding: 0 0 42px 32px;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.intro__description span {
+    font-weight: 300;
+}
+
+.intro__wrap-info {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.intro__order {
+    display: block;
+    width: 220px;
+    margin: 0 0 0 24px;
+    padding: 0 0 0 44px;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #101010;
+    background: linear-gradient(90deg, #FF6400 0%, #FF6400 0.01%, #FF3232 50%, #FF0064 100%);
+    box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.intro__order:hover {
+    background-color: #F0F0F0;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.24);
+}
+
+.intro__order:focus, .intro__order:active {
+    background-color: #FFFFFF;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    color: #101010;
+    opacity: 0.6;
+}
+
+.intro__title-down {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+}
+
+@media (min-width: 768px) {
+    .intro {
+        position: relative;
+        margin: -125px 0 0 0;
+        padding: 0;
+    }
+
+    .intro::before {
+        position: absolute;
+        content: "";
+        height: 12px;
+        left: 7%;
+        right: 0%;
+        bottom: 0;
+        background: linear-gradient(90deg, #FF6400 0%, #FF6400 0.01%, #FF3232 50%, #FF0064 100%);
+    }
+
+    .intro__wrap {
+        width: 708px;
+        padding: 0 0 95px 0;
+    }
+
+    .intro__title {
+        padding: 0 0 40px 24px;
+        font-size: 60px;
+        line-height: 72px;
+    }
+
+    .intro__wrap-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+
+    .intro__description {
+        width: 380px;
+        margin: 0;
+        padding: 0 0 0 24px;
+        font-size: 16px;
+        line-height: 24px;
+        white-space: normal;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .intro__order {
+        width: 224px;
+        height: 40px;
+        margin: 0;
+        padding: 0 0 0 32px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .intro::before {
+        left: 7%;
+        right: 0;
+    }
+
+    .intro__wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 860px;
+        padding: 0 0 70px 0;
+    }
+
+    .intro__title {
+        width: 550px;
+        padding: 40px 0;
+    }
+
+    .intro__wrap-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0 0 65px 0;
+        width: 300px;
+    }
+
+    .intro__description {
+        width: 300px;
+        margin: 0 0 88px 0;
+        padding: 0;
+        text-align: right;
+    }
+
+    .intro__order {
+        margin: 0 0 0 50px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .intro__wrap {
+        width: 1200px;
+        padding: 0 0 80px 0;
+    }
+
+    .intro__wrap-top {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    .intro__title {
+        position: relative;
+        width: 538px;
+        padding: 190px 80px 42px 0;
+        font-size: 64px;
+        line-height: 80px;
+        white-space: normal;
+    }
+
+    .intro::before {
+        height: 16px;
+        left: 10.5%;
+        right: 0;
+    }
+
+    .intro__description {
+        margin: 0 0 40px 0;
+        font-size: 20px;
+        line-height: 32px;
+    }
+}

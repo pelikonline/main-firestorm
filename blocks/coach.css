@@ -1,0 +1,205 @@
+.coach {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    background-color: #080808;
+}
+
+.coach__wrap {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin: 0 auto;
+    padding: 60px 0 40px 0;
+}
+
+.coach__title {
+    order: 2;
+    width: 220px;
+    margin: 0 0 40px 0;
+    padding: 0 0 0 32px;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.coach__intro {
+    order: 1;
+    text-align: center;
+    margin: 0 0 80px 0;
+    padding: 0;
+}
+
+.coach__stat {
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    min-height: 198px;
+}
+
+.coach__intro-text {
+    margin: 0 0 20px 0;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #909090;
+}
+
+.coach__intro-text span {
+    font-weight: 400;
+}
+
+.coach__item {
+    order: 3;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.coach__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 40px 0;
+}
+
+.coach__head-name {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: pre-line;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.coach__head-name span {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #909090;
+}
+
+.coach__head-avatar {
+    width: 64px;
+    height: 64px;
+    margin: 0;
+    padding: 0;
+}
+
+.coach__info {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: lowercase;
+    color: #FFFFFF;
+}
+
+.coach__info span {
+    margin: 0 0 40px 0;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .coach__wrap {
+        width: 708px;
+        padding: 95px 0 95px 0;
+    }
+
+    .coach__intro {
+        order: 1;
+        margin: 0 0 60px 0;
+    }
+
+    .coach__intro-text {
+        margin: 0 0 20px 0;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .coach__title {
+        order: 2;
+        width: 600px;
+        margin: 0 0 60px 0;
+        padding: 0 0 0 32px;
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .coach__head {
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+        margin: 0 0 40px 0;
+    }
+
+    .coach__head-avatar {
+        margin: 32px 32px 0 0;
+    }
+
+    .coach__head-name {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .coach__head-name span {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .coach__info {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .coach__info span {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .coach__wrap {
+        width: 860px;
+        padding: 115px 0 115px 0;
+    }
+
+    .coach__intro {
+        margin: 0 0 60px 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    .coach__title {
+        padding: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .coach__wrap {
+        width: 1200px;
+    }
+
+    .coach__title {
+        margin: 0 0 80px 0;
+    }
+
+    .coach__intro-text {
+        text-align: left;
+        margin: 0 0 20px 32px;
+    }
+
+    .coach__stat {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 1080px;
+        height: 668px;
+    }
+}

@@ -1,0 +1,166 @@
+.junior {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    background-color: #101010;;
+}
+
+.junior::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 258px;
+    background-image: url("../img/chip-mob.png");
+    background-repeat: no-repeat;
+    left: calc(50% - 320px/2);
+    top: 62px;
+}
+
+.junior__wrap {
+    width: 320px;
+    margin: 0 auto;
+    padding: 62px 0 62px 0;
+}
+
+.junior__title {
+    width: 205px;
+    margin: 0 0 24px 0;
+    padding: 274px 0 0 60px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.junior__description {
+    min-width: 256px;
+    margin: 0 0 20px 0;
+    padding: 0 32px 0 32px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 24px;
+    color: #909090;
+}
+
+.junior__description span {
+    font-weight: 600;
+}
+
+.junior__link {
+    display: block;
+    width: 272px;
+    margin: 24px 0 0 32px;
+    padding: 0;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+    color: #101010;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .junior__wrap {
+        width: 708px;
+        padding: 0 0 90px 0;
+    }
+
+    .junior::before {
+        position: absolute;
+        content: "";
+        width: 320px;
+        height: 258px;
+        background-image: url("../img/chip-mob.png");
+        background-repeat: no-repeat;
+        left: calc(70% - 384px/2 - 320px);
+        top: -90px;
+    }
+
+    .junior__title {
+        width: 420px;
+        margin: 0 0 70px 0;
+        padding: 90px 0 0 310px;
+        text-align: left;
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .junior__description {
+        min-width: 420px;
+        margin: 0 0 20px 0;
+        padding: 0 0 0 310px;
+        text-align: left;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .junior__description:last-of-type {
+        margin: 0 0 70px 0;
+    }
+
+    .junior__link {
+        display: block;
+        width: 272px;
+        margin: 24px 0 0 310px;
+        padding: 0;
+        font-size: 14px;
+        line-height: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .junior__wrap {
+        width: 860px;
+    }
+
+    .junior::before {
+        left: calc(50% - 384px/2 - 320px);
+        top: -90px;
+    }
+
+    .junior__title {
+        width: 450px;
+    }
+
+    .junior__description {
+        width: 450px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .junior__wrap {
+        width: 1200px;
+    }
+
+    .junior::before {
+        position: absolute;
+        content: "";
+        width: 615px;
+        height: 530px;
+        background-image: url("../img/chip_desc.png");
+        background-repeat: no-repeat;
+        left: calc(50% - 658px/2 - 434px);
+        top: -90px;
+    }
+
+    .junior__title {
+        margin: 0 0 70px 200px;
+    }
+
+    .junior__description {
+        width: 450px;
+        padding: 0 0 0 510px;
+    }
+
+    .junior__link {
+        margin: 24px 0 0 510px;
+    }
+}
