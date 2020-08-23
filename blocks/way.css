@@ -46,6 +46,10 @@
     padding: 0 32px 0 32px;
 }
 
+.way__nav li {
+    position: relative;
+}
+
 .way__nav-title {
     font-weight: 600;
     font-size: 20px;
@@ -226,14 +230,14 @@ a.way__nav-title--active::before {
         left: 506px;
     }
 
-    .way__nav::after {
+    li.way__nav-title--active::after {
         position: absolute;
         content: "";
         width: 12px;
         height: 20px;
         background-image: url("../img/to-right.svg");
         background-repeat: no-repeat;
-        left: 130px;
+        right: -30px;
         top: 16px;
         z-index: 10;
     }
